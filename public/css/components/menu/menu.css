@@ -5,6 +5,7 @@ body {
   margin: 0; }
 
 .menu {
+  opacity: 1;
   position: sticky;
   top: 0;
   position: -webkit-sticky;
@@ -26,6 +27,7 @@ body {
     text-decoration: none; }
 
 .subMenu {
+  opacity: 0;
   position: fixed;
   color: white;
   background-color: #111; }

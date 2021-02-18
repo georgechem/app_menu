@@ -9,6 +9,7 @@ body {
   margin: 0;
 }
 .menu{
+  opacity: 1;
   position: sticky;
   top:0;
   //safari support
@@ -37,6 +38,7 @@ body {
 
 }
 .subMenu{
+  opacity: 0;
   position: fixed;
   color: white;
   //width mus depend on device
