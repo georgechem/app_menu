@@ -1,25 +1,32 @@
 * {
   box-sizing: border-box;
 }
+$bp-mobile: 240px;
+$bp-tablet: 600px;
+$bp-desktop: 1000px;
+
 body {
   margin: 0;
 }
 .menu{
-
+  position: sticky;
+  top:0;
+  //safari support
+  position: -webkit-sticky;
+  width: 100%;
   background-color: #111;
   &__list{
     margin:0 auto;
     padding:5px;
-    width: 95%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border: 1px solid red;
+    //border: 1px solid red;
   }
   &__item{
     margin: 5px;
-    padding: 0 5px;
-    border: 1px solid white;
+    padding: 5px 5px;
+    //border: 1px solid white;
     list-style-type: none;
   }
   &__link{
@@ -28,4 +35,26 @@ body {
     text-decoration: none;
   }
 
+}
+.subMenu{
+  position: fixed;
+  color: white;
+  //width mus depend on device
+  @media (min-width: $bp-mobile){
+    width:100%;
+  }
+  @media (min-width: $bp-tablet){
+    width: 50%;
+  }
+  @media (min-width: $bp-desktop){
+    width: 35%;
+  }
+
+  background-color: #111;
+
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }

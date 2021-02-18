@@ -5,23 +5,42 @@ body {
   margin: 0; }
 
 .menu {
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  width: 100%;
   background-color: #111; }
   .menu__list {
     margin: 0 auto;
     padding: 5px;
-    width: 95%;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    border: 1px solid red; }
+    flex-wrap: wrap; }
   .menu__item {
     margin: 5px;
-    padding: 0 5px;
-    border: 1px solid white;
+    padding: 5px 5px;
     list-style-type: none; }
   .menu__link {
     text-transform: uppercase;
     color: white;
     text-decoration: none; }
+
+.subMenu {
+  position: fixed;
+  color: white;
+  background-color: #111; }
+  @media (min-width: 240px) {
+    .subMenu {
+      width: 100%; } }
+  @media (min-width: 600px) {
+    .subMenu {
+      width: 50%; } }
+  @media (min-width: 1000px) {
+    .subMenu {
+      width: 35%; } }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
 
 /*# sourceMappingURL=menu.css.map */
