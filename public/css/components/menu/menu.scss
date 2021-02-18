@@ -11,10 +11,7 @@ body {
 .menu{
   opacity: 1;
   cursor: pointer;
-  position: fixed;
-  top:0;
-  //safari support
-  position: -webkit-sticky;
+  position: absolute;
   width: 100%;
   background-color: #111;
   &__list{
