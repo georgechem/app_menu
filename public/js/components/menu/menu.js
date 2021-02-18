@@ -1,9 +1,13 @@
 /**
  * To work requires first load files
  * - fadeInOutToggleClasses.js
+ * - moveUpMoveDown.js
  *
  * @type {HTMLElement}
  */
+
+
+
 
 // Menu elements
 const navMenu = document.getElementById('navMenu');
@@ -18,11 +22,14 @@ menuLinks.forEach(function(link){
 
 // Menu actions
 navMenu.addEventListener('click', function(){
-    fadeOut(navMenu, [navMenu, navSubMenu]);
-    fadeIn(navSubMenu);
+    moveUp(navMenu, 100);
+    setTimeout(moveDown, 300, navSubMenu, 100);
+
 });
 navSubMenu.addEventListener('click', function(){
-    fadeOut(navSubMenu, [navMenu, navSubMenu]);
-    fadeIn(navMenu);
+    moveUp(navSubMenu, 100);
+    setTimeout(moveDown, 300, navMenu, 100);
+    //moveDown(navMenu, 100)
+
 });
 

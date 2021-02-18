@@ -11,7 +11,7 @@ body {
 .menu{
   opacity: 1;
   cursor: pointer;
-  position: sticky;
+  position: fixed;
   top:0;
   //safari support
   position: -webkit-sticky;
@@ -39,9 +39,10 @@ body {
 
 }
 .subMenu{
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
   position: fixed;
+  top: -100%;
   color: white;
   background-color: #111;
   border-radius: 0 0 25px 0;
