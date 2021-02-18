@@ -1,3 +1,31 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+}
+.menu{
+
+  background-color: #111;
+  &__list{
+    margin:0 auto;
+    padding:5px;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid red;
+  }
+  &__item{
+    margin: 5px;
+    padding: 0 5px;
+    border: 1px solid white;
+    list-style-type: none;
+  }
+  &__link{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+
+}
